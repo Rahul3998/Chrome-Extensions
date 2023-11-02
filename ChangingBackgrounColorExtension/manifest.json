@@ -1,0 +1,26 @@
+{
+	"manifest_version": 3,
+	"name": "Background Color Changer",
+	"description": "Extension which is used for changing the color according to the users choice.",
+	"version": "1.0.0",
+	
+	"icons": {
+		"16": "icons/16.png",
+		"48": "icons/48.png",
+		"64": "icons/64.png",
+		"128": "icons/128.png"
+	},
+	"action": {
+		"default_title": "Click Me",
+		"default_popup": "popup/popup.html"
+	},
+	"content_scripts": [
+		{
+			"js": ["content.js"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"permissions": [
+		"tabs"
+	]
+}
